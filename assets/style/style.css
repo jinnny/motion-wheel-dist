@@ -1,0 +1,488 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;600;700&family=Roboto:wght@100;300;400;500;700&display=swap");
+:root {
+  /* Colors: */
+  --unnamed-color-000000: #000000;
+  --unnamed-color-dfdfdf: #DFDFDF;
+  --unnamed-color-4592ff: #4592FF;
+  --unnamed-color-8b94dc: #8B94DC;
+  --unnamed-color-757575: #757575;
+  --unnamed-color-00edff: #00EDFF;
+  --unnamed-color-f8fafc: #F8FAFC;
+  --unnamed-color-ffffff: #FFFFFF;
+  --unnamed-color-f5f5f5: #F5F5F5;
+  --unnamed-color-c4c4c4: #C4C4C4;
+  --unnamed-color-373a3c: #373A3C;
+  --unnamed-color-4c4c4c: #4C4C4C;
+  --unnamed-color-e9ebfb: #E9EBFB;
+  --unnamed-color-c7cdf6: #C7CDF6;
+  --unnamed-color-4d6ee4: #4D6EE4;
+  --main-color: #3557DA;
+  /* Font/text values */
+  --unnamed-font-family-noto-sans-cjk-kr: Noto Sans CJK KR;
+  --unnamed-font-family-rixrak-sans_pro: RixRak-Sans_Pro;
+  --unnamed-font-style-normal: normal;
+  --unnamed-font-weight-medium: medium;
+  --unnamed-font-weight-normal: normal;
+  --unnamed-font-weight-bold: bold;
+  --unnamed-font-size-13: 13px;
+  --unnamed-font-size-14: 14px;
+  --unnamed-font-size-16: 16px;
+  --unnamed-font-size-20: 20px;
+  --unnamed-font-size-22: 22px;
+  --unnamed-font-size-24: 24px;
+  --unnamed-font-size-26: 26px;
+  --unnamed-character-spacing-0: 0px;
+  --unnamed-character-spacing--0-28: -0.28px;
+  --unnamed-character-spacing--2-64: -2.64px;
+  --unnamed-line-spacing-14: 14px;
+  --unnamed-line-spacing-28: 28px;
+}
+
+.blind, .hide {
+  position: absolute !important;
+  width: 0 !important;
+  height: 0 !important;
+  font-size: 0;
+  line-height: 0;
+  visibility: hidden;
+  overflow: hidden;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+*, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans KR", "Roboto", sans-serif, "Malgun Gothic", "맑은 고딕", AppleSDGothicNeo, -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+
+html {
+  font-size: 16px;
+}
+@media all and (max-width: 910px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a:link {
+  text-decoration: none;
+  cursor: pointer;
+  color: inherit;
+}
+
+img {
+  border: 0;
+  vertical-align: middle;
+  max-width: 100%;
+}
+
+ol, ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+fieldset {
+  border: 0;
+}
+
+button {
+  border: 0;
+  background: none;
+  cursor: pointer;
+}
+button:focus {
+  outline: none;
+}
+
+strong,
+b {
+  color: inherit;
+  font-size: inherit;
+}
+
+i,
+em {
+  font-style: normal;
+}
+
+mark {
+  color: inherit;
+  background: none;
+}
+
+button {
+  -webkit-appearance: none;
+}
+
+input {
+  -webkit-border-radius: 0;
+}
+
+input:matches([type=password], [type=search]),
+input[type=text],
+textarea {
+  -webkit-appearance: none;
+  -webkit-border-radius: 0;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+}
+
+.layout {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.layout::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.layout.is--content-center {
+  text-align: center;
+}
+@media screen and (max-width: 1200px) {
+  .layout {
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 990px) {
+  .layout {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+img {
+  max-width: 100%;
+}
+
+@media screen and (min-width: 991px) {
+  .is--mobile {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 990px) {
+  .is--pc {
+    display: none !important;
+  }
+}
+
+.img-circle {
+  vertical-align: baseline;
+}
+
+[data-aos][data-aos][data-aos-delay="3200"].aos-animate,
+body[data-aos-delay="3200"] [data-aos].aos-animate {
+  transition-delay: 3.2s;
+}
+
+[data-aos][data-aos][data-aos-delay="3400"].aos-animate,
+body[data-aos-delay="3400"] [data-aos].aos-animate {
+  transition-delay: 3.4s;
+}
+
+[data-aos][data-aos][data-aos-delay="3600"].aos-animate,
+body[data-aos-delay="3600"] [data-aos].aos-animate {
+  transition-delay: 3.6s;
+}
+
+[data-aos][data-aos][data-aos-delay="4200"].aos-animate,
+body[data-aos-delay="4200"] [data-aos].aos-animate {
+  transition-delay: 4.2s;
+}
+
+.side-text {
+  width: 4.6875%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-top: 12.8vh;
+  box-sizing: border-box;
+  height: 100%;
+  z-index: 10;
+  text-align: center;
+}
+.side-text.right {
+  left: auto;
+  right: 0;
+}
+.side-text__link {
+  display: block;
+}
+
+body.is--overflow-hidden {
+  overflow-y: hidden;
+}
+
+.main {
+  overflow-x: hidden;
+}
+
+html,
+body {
+  overflow: hidden;
+}
+
+*, :after, :before {
+  box-sizing: border-box;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+}
+
+.top-sticky {
+  position: relative;
+  height: 400vh;
+}
+
+.top-sticky__section, .top-sticky__section__content {
+  position: relative;
+}
+
+.top-sticky__section {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+.top-sticky__section .top-sticky__section__content {
+  position: relative;
+  overflow: hidden;
+  height: 100vh;
+  top: 0;
+}
+.top-sticky__section .background--top {
+  width: 100%;
+}
+.top-sticky__section picture {
+  display: block;
+}
+.top-sticky__section .background--cover {
+  --iframe-width: 100vw;
+  --iframe-height: 100vh;
+  width: 100%;
+  height: 100%;
+}
+.top-sticky__section .background {
+  position: absolute;
+  overflow: clip;
+  left: 0;
+  top: 0;
+}
+.top-sticky__section .intro__background {
+  min-height: 100%;
+  height: 110vh;
+}
+.top-sticky__section .intro__content {
+  height: 100vh;
+}
+.top-sticky__section .intro__content__title {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.description {
+  top: 81.11111vh;
+}
+
+.top-sticky__section--top {
+  z-index: 1;
+}
+
+.top-sticky__section {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.top-sticky__section__content {
+  position: sticky;
+  height: 100vh;
+  top: 0;
+  overflow: hidden;
+}
+
+.description__background {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 40px;
+  width: 36.11111%;
+  height: 62.22222vh;
+}
+
+.top-sticky__section {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.description {
+  top: 81.11111vh;
+}
+
+.top-sticky__section--top {
+  z-index: 1;
+}
+
+.has-scroll-smooth {
+  scroll-behavior: auto;
+}
+.has-scroll-smooth[data-scroll] {
+  will-change: transform;
+}
+
+.has-scroll-smooth .top-sticky__section__content {
+  position: relative;
+}
+
+img[draggable=false] {
+  pointer-events: none;
+  -webkit-user-drag: none;
+}
+
+img {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+  vertical-align: top;
+}
+
+.background img, img.background {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.background--cover img, .background--cover video, img.background--cover, video.background--cover {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: 50% 50%;
+  object-position: 50% 50%;
+  aspect-ratio: unset;
+}
+
+.background--cover.background--top img, img.background--cover.background--top {
+  -o-object-position: 50% 0;
+  object-position: 50% 0;
+}
+
+.has-scroll-smooth [data-scroll-section][data-scroll-section-id]:not([data-scroll-section-inview]) {
+  transform: translateX(-200vw) !important;
+}
+
+.premium-section .premium-top {
+  padding-top: 146px;
+  padding-bottom: 68px;
+}
+.premium-section .premium-top__text {
+  font-family: "minerva-modern", "Noto Sans KR", "Roboto", sans-serif, "Malgun Gothic", "맑은 고딕", AppleSDGothicNeo, -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  letter-spacing: -0.22px;
+  line-height: 1.09;
+  color: rgba(254, 254, 254, 0.39);
+}
+.premium-section .premium-top__title {
+  font-family: "minerva-modern", "Noto Sans KR", "Roboto", sans-serif, "Malgun Gothic", "맑은 고딕", AppleSDGothicNeo, -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  font-size: 80px;
+  letter-spacing: -0.4px;
+  line-height: 1.2;
+}
+.premium-section .premium-item {
+  border-radius: 47px 47px 0 0;
+}
+.premium-section .premium-item-content {
+  height: 514px;
+  padding-top: 0;
+  padding-bottom: 64px;
+}
+.premium-section .premium-item-content-inner {
+  width: 57vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+.premium-section .premium-item-text .premium-item__title {
+  font-size: 46px;
+  letter-spacing: -0.4px;
+  line-height: 1.19;
+  margin-bottom: 60px;
+  color: #BC978C;
+  font-family: "minerva-modern", "Noto Sans KR", "Roboto", sans-serif, "Malgun Gothic", "맑은 고딕", AppleSDGothicNeo, -apple-system, BlinkMacSystemFont, "Malgun Gothic", "맑은 고딕", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+}
+.premium-section .premium-item-text .premium-item__sub-title {
+  color: #BC978C;
+  line-height: 1.21;
+  font-size: 22px;
+  display: block;
+  margin-bottom: 16px;
+}
+.premium-section .premium-item-text .premium-item__text {
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: -0.4px;
+}
+.premium-section .premium-item1 {
+  background: #414356;
+}
+.premium-section .premium-item2 {
+  background: #4B4D60;
+}
+.premium-section .premium-item3 {
+  background: #55576A;
+}
+.premium-section .premium-item4 {
+  background: #414356;
+}
+.premium-section .premium-item5 {
+  background: #4B4D60;
+}
+.premium-section .premium-item6 {
+  background: #55576A;
+}
