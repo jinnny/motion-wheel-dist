@@ -4,241 +4,369 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GSAP Scroll Effect</title>
+  <title>철산자이더시티</title>
   <link href="https://webfontworld.github.io/NexonLv1Gothic/NexonLv1Gothic.css" rel="stylesheet">
   <link rel="stylesheet" href="https://use.typekit.net/lol4lwz.css">
   <link rel="stylesheet" href="/assets/style/gsap.css">
 </head>
 <body>
+<header class="header js-header">
+  <div class="header-left">
+    <h1 class="header-logo">
+      <a href="/" class="header-logo__link">철산자이 더 시티</a>
+    </h1>
+  </div>
+  <div class="header-right">
+    <a href="" class="header-link">
+      <img src="/assets/images/common/header-icon1.png" alt="" class="header-link-icon">
+    </a>
+    <a href="" class="header-link">
+      <img src="/assets/images/common/header-icon2.png" alt="" class="header-link-icon">
+    </a>
+    <a href="" class="header-link">
+      <img src="/assets/images/common/header-icon3.svg" alt="" class="header-link-icon">
+    </a>
+    <span class="header-right-line"></span>
+    <a href="tel:1833-3020" class="header-tel"></a>
+    <button class="header-menu-button">
+      <img src="/assets/images/common/header-menu.svg" alt="">
+    </button>
+  </div>
+</header>
+<nav class="header-menu">
+  <ul class="header-menu-list">
+    <li class="header-menu__item">
+      <a href="/overview" class="header-menu__link">사업개요</a>
+    </li>
+    <li class="header-menu__item">
+      <a href="" class="header-menu__link">프리미엄</a>
+    </li>
+    <li class="header-menu__item">
+      <a href="" class="header-menu__link">입지환경</a>
+    </li>
+    <li class="header-menu__item">
+      <a href="" class="header-menu__link">오시는길</a>
+    </li>
+    <li class="header-menu__item">
+      <a href="" class="header-menu__link">관심고객등록</a>
+    </li>
+  </ul>
+</nav>
 <div id="wrapper">
-  <main id="parallax__cont">
-    <section id="section1" class="parallax__item main-section">
-      <div class="parallax__item__img main-section-bg"></div>
-      <div class="main-section-content">
+  <div id="smooth-content">
+    <div class="main-scroll"></div>
+    <main id="parallax__cont">
+      <section id="section1" class="parallax__item main-section">
+        <div class="parallax__item__img main-section-bg"></div>
+        <div class="main-section-content">
+          <div class="main-title-img">
+            <img src="/assets/images/main/main-title.png" alt="" class="hide--m">
+            <img src="/assets/images/main/m-main-title.png" alt="" class="hide--pc">
+          </div>
         <p class="main-section__title-sub">광명 철산 <b>또 하나의 기대작</b></p>
-        <h1 class="parallax__item__title main-section__title">철산자이 더 시티</h1>
-      </div>
-      <div class="box-wrap">
-        <div class="section2-box js-section2-box"></div>
-      </div>
-    </section>
-    <!-- //section1 -->
+          <h1 class="parallax__item__title main-section__title">철산자이 더 시티</h1>
+        </div>
+        <div class="box-wrap summary">
+          <div class="summary-box js-section2-box">
+            <div class="summary-box-inner">
+              <img src="/assets/images/main/summary-left.png" alt="" class="summary-box-text left hide--m">
+              <img src="/assets/images/main/summary-right.png" alt="" class="summary-box-text right hide--m">
+              <img src="/assets/images/main/m-summary-text.png" alt="" class="summary-box-text hide--pc">
+              <p class="summary-box-bottom-text js-summary-box-bottom">Summary</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //section1 -->
 
-    <section id="section2" class="parallax__item">
-    </section>
-    <!-- //section2 -->
+      <section id="section2" class="parallax__item">
+      </section>
+      <!-- //section2 -->
 
-    <section id="section3" class="parallax__item premium-section">
-      <div class="premium-top uses__top js-uses-title">
-        <header class="text--center">
-          <p class="premium-top__text">Cheolsan Xi THE CITY</p>
-          <h2 class="premium-top__title">
-            Premium
-          </h2>
-        </header>
-      </div>
-      <div class="js-uses-image-measure premium-bottom section3-bottom">
-        <div class="premium-item premium-item1 js-uses-section">
-          <div class="container-h premium-item-content uses__section__content">
-            <div class="premium-item-content-inner">
-              <div class="premium-item-img">
-                <picture class="premium-item-picture">
-                  <source srcset="/assets/images/main/premium-img1.png" type="image/png">
-                  <img src="/assets/images/main/premium-img1.png" alt="">
-                </picture>
-              </div>
-              <div class="premium-item-text">
-                <h3 class="premium-item__title">Brand Xi</h3>
-                <strong class="premium-item__sub-title">광명 철산을 대표할 빅브랜드 <b>자이타운의 자부심</b></strong>
-                <p class="premium-item__text js-uses-text">
-                  •   단지 주변 자이의 명성과 자부심으로 완성될 대단지 자이타운 형성
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="premium-item premium-item2 js-uses-section">
-          <div class="container-h premium-item-content uses__section__content">
-            <div class="premium-item-content-inner">
-              <div class="premium-item-img">
-                <picture class="premium-item-picture">
-                  <source srcset="/assets/images/main/premium-img2.png" type="image/png">
-                  <img src="/assets/images/main/premium-img2.png" alt="">
-                </picture>
-              </div>
-              <div class="premium-item-text">
-                <h3 class="premium-item__title">Traffic</h3>
-                <strong class="premium-item__sub-title">남부순환로, 서부간선도로, 신안산선(2024년 예정) 등 <b>광역교통망</b></strong>
-                <p class="premium-item__text js-uses-text">
-                  •   7호선 철산역, 1호선 구일역, 경인로 등 다양한 교통 인프라로 빠르게 연결
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="premium-item premium-item3 js-uses-section" data-scroll data-scroll-speed="1"  id="usesSection3">
-          <div class="container-h premium-item-content uses__section__content" data-scroll data-scroll-sticky data-scroll-target="#usesSection3">
-            <div class="premium-item-content-inner">
-              <div class="premium-item-img">
-                <picture class="premium-item-picture">
-                  <source srcset="/assets/images/main/premium-img3.png" type="image/png">
-                  <img src="/assets/images/main/premium-img3.png" alt="">
-                </picture>
-              </div>
-              <div class="premium-item-text">
-                <h3 class="premium-item__title">Education</h3>
-                <strong class="premium-item__sub-title">초등학교를 품은 학세권 아파트로 안전하고<b>우수한 교육환경</b></strong>
-                <p class="premium-item__text js-uses-text">
-                  •   품격 있는 라이프스타일을 선사하는 자이의 혁신평면
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="premium-item premium-item4 js-uses-section" data-scroll data-scroll-speed="1" id="usesSection4">
-          <div class="container-h premium-item-content uses__section__content" data-scroll data-scroll-sticky data-scroll-target="#usesSection4">
-            <div class="premium-item-content-inner">
-              <div class="premium-item-img">
-                <picture class="premium-item-picture">
-                  <source srcset="/assets/images/main/premium-img4.png" type="image/png">
-                  <img src="/assets/images/main/premium-img4.png" alt="">
-                </picture>
-              </div>
-              <div class="premium-item-text">
-                <h3 class="premium-item__title">Infra</h3>
-                <strong class="premium-item__sub-title">풍부한 생활 인프라로 누리는 편리한<b>프리미엄 라이프</b></strong>
-                <p class="premium-item__text js-uses-text">
-                  •   코스트코/아이파크몰(고척점), 아울렛, 광명시청 등 생활편의시설 인접
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="premium-item premium-item5 js-uses-section" data-scroll data-scroll-speed="1" id="usesSection5">
-          <div class="container-h premium-item-content uses__section__content" data-scroll data-scroll-sticky data-scroll-target="#usesSection5">
-            <div class="premium-item-content-inner">
-              <div class="premium-item-img">
-                <picture class="premium-item-picture">
-                  <source srcset="/assets/images/main/premium-img5.png" type="image/png">
-                  <img src="/assets/images/main/premium-img5.png" alt="">
-                </picture>
-              </div>
-              <div class="premium-item-text">
-                <h3 class="premium-item__title">Healing Life</h3>
-                <strong class="premium-item__sub-title">안양천과 현충근린공원, 광명햇살광장 등 <b>힐링라이프</b></strong>
-                <p class="premium-item__text js-uses-text">
-                  •   풍요롭고 건강한 삶을 누릴 수 있는 그린라이프
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="premium-item premium-item6 js-uses-section-last " data-scroll data-scroll-speed="1"  id="usesSection6">
-          <div class="container-h premium-item-content uses__section__content" data-scroll data-scroll-sticky data-scroll-target="#usesSection6">
-            <div class="premium-item-content-inner">
-              <div class="premium-item-img">
-                <picture class="premium-item-picture">
-                  <source srcset="/assets/images/main/premium-img6.png" type="image/png">
-                  <img src="/assets/images/main/premium-img6.png" alt="">
-                </picture>
-              </div>
-              <div class="premium-item-text">
-                <h3 class="premium-item__title">Unit Plan</h3>
-                <strong class="premium-item__sub-title">4BAY 및 최신 트렌드를 반영한 <b>평면 특화설계</b></strong>
-                <p class="premium-item__text js-uses-text">
-                  •   품격 있는 라이프스타일을 선사하는 자이의 혁신평면
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="system-section-area">
-        <section class="section parallax__item system-section">
-          <header class="section-top system text--center js-system-trigger">
-            <p class="section-top__text system">Cheolsan Xi THE CITY</p>
-            <h2 class="section-top__title system">
-              System
+      <section id="section3" class="parallax__item premium-section">
+        <div class="premium-top uses__top js-uses-title">
+          <header class="text--center">
+            <p class="premium-top__text">Cheolsan Xi THE CITY</p>
+            <h2 class="premium-top__title">
+              Premium
             </h2>
           </header>
-
-          <div class="system-rotate-slide-area">
-            <div class="system-rotate-slide">
-              <div class="circle-filter-area">
-                <div class="circle-slider" id="circleSlider"></div>
+        </div>
+        <div class="js-uses-image-measure premium-bottom section3-bottom">
+          <div class="premium-item premium-item1 js-uses-section">
+            <div class="container-h premium-item-content uses__section__content">
+              <div class="premium-item-content-inner">
+                <div class="premium-item-img">
+                  <h3 class="premium-item__title hide--pc">Brand Xi</h3>
+                  <picture class="premium-item-picture">
+                    <source srcset="/assets/images/main/premium-img1.png" type="image/png">
+                    <img src="/assets/images/main/premium-img1.png" alt="">
+                  </picture>
+                </div>
+                <div class="premium-item-text">
+                  <h3 class="premium-item__title hide--m">Brand Xi</h3>
+                  <strong class="premium-item__sub-title">광명 철산을 대표할 빅브랜드 <b>자이타운의 자부심</b></strong>
+                  <p class="premium-item__text js-uses-text">
+                    •   단지 주변 자이의 명성과 자부심으로 완성될 대단지 자이타운 형성
+                  </p>
+                </div>
               </div>
             </div>
           </div>
-        </section>
-      </div>
-
-    </section>
-    <!-- //section3 -->
-
-    <section id="section5" class="parallax__item sysclein-section">
-      <div class="sysclein-section-inner">
-        <header class="section-top sysclein">
-          <p class="section-top__text sysclein">Cheolsan Xi THE CITY</p>
-          <h2 class="section-top__title sysclein">
-            Sys Clein
-          </h2>
-          <p class="section-top__description">
-            창문을 열지 않고도 스스로 환기하는<br/>
-            차세대 환기형 공기청정 시스템 시스클라인
-          </p>
-          <a href="">
-            <img src="/assets/images/main/sysclein-button.png" alt="시스클라인 보기">
-          </a>
-        </header>
-        <div class="sysclein-items">
-          <div class="sysclein-item">
-            <img src="/assets/images/main/sysclein-img0.png" alt="">
+          <div class="premium-item premium-item2 js-uses-section">
+            <div class="container-h premium-item-content uses__section__content">
+              <div class="premium-item-content-inner">
+                <div class="premium-item-img">
+                  <h3 class="premium-item__title hide--pc">Traffic</h3>
+                  <picture class="premium-item-picture">
+                    <source srcset="/assets/images/main/premium-img2.png" type="image/png">
+                    <img src="/assets/images/main/premium-img2.png" alt="">
+                  </picture>
+                </div>
+                <div class="premium-item-text">
+                  <h3 class="premium-item__title hide--m">Traffic</h3>
+                  <strong class="premium-item__sub-title">남부순환로, 서부간선도로, 신안산선(2024년 예정) 등 <b>광역교통망</b></strong>
+                  <p class="premium-item__text js-uses-text">
+                    •   7호선 철산역, 1호선 구일역, 경인로 등 다양한 교통 인프라로 빠르게 연결
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="sysclein-item">
-            <img src="/assets/images/main/sysclein-img1.png" alt="">
+          <div class="premium-item premium-item3 js-uses-section" data-scroll data-scroll-speed="1"  id="usesSection3">
+            <div class="container-h premium-item-content uses__section__content" data-scroll data-scroll-sticky data-scroll-target="#usesSection3">
+              <div class="premium-item-content-inner">
+                <div class="premium-item-img">
+                  <h3 class="premium-item__title hide--pc">Education</h3>
+                  <picture class="premium-item-picture">
+                    <source srcset="/assets/images/main/premium-img3.png" type="image/png">
+                    <img src="/assets/images/main/premium-img3.png" alt="">
+                  </picture>
+                </div>
+                <div class="premium-item-text">
+                  <h3 class="premium-item__title hide--m">Education</h3>
+                  <strong class="premium-item__sub-title">초등학교를 품은 학세권 아파트로 안전하고<b>우수한 교육환경</b></strong>
+                  <p class="premium-item__text js-uses-text">
+                    •   품격 있는 라이프스타일을 선사하는 자이의 혁신평면
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="sysclein-item">
-            <img src="/assets/images/main/sysclein-img2.png" alt="">
+          <div class="premium-item premium-item4 js-uses-section" data-scroll data-scroll-speed="1" id="usesSection4">
+            <div class="container-h premium-item-content uses__section__content" data-scroll data-scroll-sticky data-scroll-target="#usesSection4">
+              <div class="premium-item-content-inner">
+                <div class="premium-item-img">
+                  <h3 class="premium-item__title hide--pc">Infra</h3>
+                  <picture class="premium-item-picture">
+                    <source srcset="/assets/images/main/premium-img4.png" type="image/png">
+                    <img src="/assets/images/main/premium-img4.png" alt="">
+                  </picture>
+                </div>
+                <div class="premium-item-text">
+                  <h3 class="premium-item__title hide--m">Infra</h3>
+                  <strong class="premium-item__sub-title">풍부한 생활 인프라로 누리는 편리한<b>프리미엄 라이프</b></strong>
+                  <p class="premium-item__text js-uses-text">
+                    •   코스트코/아이파크몰(고척점), 아울렛, 광명시청 등 생활편의시설 인접
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="premium-item premium-item5 js-uses-section" data-scroll data-scroll-speed="1" id="usesSection5">
+            <div class="container-h premium-item-content uses__section__content" data-scroll data-scroll-sticky data-scroll-target="#usesSection5">
+              <div class="premium-item-content-inner">
+                <div class="premium-item-img">
+                  <h3 class="premium-item__title hide--pc">Healing Life</h3>
+                  <picture class="premium-item-picture">
+                    <source srcset="/assets/images/main/premium-img5.png" type="image/png">
+                    <img src="/assets/images/main/premium-img5.png" alt="">
+                  </picture>
+                </div>
+                <div class="premium-item-text">
+                  <h3 class="premium-item__title hide--m">Healing Life</h3>
+                  <strong class="premium-item__sub-title">안양천과 현충근린공원, 광명햇살광장 등 <b>힐링라이프</b></strong>
+                  <p class="premium-item__text js-uses-text">
+                    •   풍요롭고 건강한 삶을 누릴 수 있는 그린라이프
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="premium-item premium-item6 js-uses-section-last " data-scroll data-scroll-speed="1"  id="usesSection6">
+            <div class="container-h premium-item-content uses__section__content" data-scroll data-scroll-sticky data-scroll-target="#usesSection6">
+              <div class="premium-item-content-inner">
+                <div class="premium-item-img">
+                  <h3 class="premium-item__title hide--pc">Unit Plan</h3>
+                  <picture class="premium-item-picture">
+                    <source srcset="/assets/images/main/premium-img6.png" type="image/png">
+                    <img src="/assets/images/main/premium-img6.png" alt="">
+                  </picture>
+                </div>
+                <div class="premium-item-text">
+                  <h3 class="premium-item__title hide--m">Unit Plan</h3>
+                  <strong class="premium-item__sub-title">4BAY 및 최신 트렌드를 반영한 <b>평면 특화설계</b></strong>
+                  <p class="premium-item__text js-uses-text">
+                    •   품격 있는 라이프스타일을 선사하는 자이의 혁신평면
+                  </p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!-- //section5 -->
+        <div class="system-section-area">
+          <section class="section parallax__item system-section">
+            <header class="section-top system text--center js-system-trigger">
+              <p class="section-top__text system">Cheolsan Xi THE CITY</p>
+              <h2 class="section-top__title system">
+                System
+              </h2>
+            </header>
 
-    <section id="section6" class="parallax__item">
-      <span class="parallax__item__num">06</span>
-      <div class="parallax__item__img"></div>
-      <h2 class="parallax__item__title">section6</h2>
-    </section>
-    <!-- //section6 -->
+<!--            <div class="system-rotate-slide-area">-->
+<!--              <div class="system-rotate-slide">-->
+<!--                <div class="circle-filter-area">-->
+<!--                  <div class="circle-slider" id="circleSlider"></div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+          </section>
+        </div>
 
-    <section id="section7" class="parallax__item">
-      <span class="parallax__item__num">07</span>
-      <div class="parallax__item__img"></div>
-      <h2 class="parallax__item__title">section7</h2>
-    </section>
-    <!-- //section7 -->
+      </section>
+      <!-- //section3 -->
 
-    <section id="section8" class="parallax__item">
-      <span class="parallax__item__num">08</span>
-      <div class="parallax__item__img"></div>
-      <h2 class="parallax__item__title">section8</h2>
-    </section>
-    <!-- //section8 -->
+      <section id="section5" class="parallax__item sysclein-section">
+        <div class="sysclein-section-inner">
+          <header class="section-top sysclein"  data-aos="fade-up">
+            <p class="section-top__text sysclein">Cheolsan Xi THE CITY</p>
+            <h2 class="section-top__title sysclein">
+              Sys Clein
+            </h2>
+            <p class="section-top__description">
+              창문을 열지 않고도 스스로 환기하는<br/>
+              차세대 환기형 공기청정 시스템 시스클라인
+            </p>
+            <a href="" class="sysclein-section-button section-button">
+              <img src="/assets/images/main/sysclein-button.png" alt="시스클라인 보기">
+            </a>
+          </header>
+          <div class="sysclein-items">
+            <div class="sysclein-item sysclein-item-not-last">
+              <img src="/assets/images/main/sysclein-img0.png" alt="" class="hide--m">
+              <img src="/assets/images/main/m-sysclein-img0.png" alt="" class="hide--pc">
+            </div>
+            <div class="sysclein-item sysclein-item-not-last">
+              <img src="/assets/images/main/sysclein-img1.png" alt="" class="hide--m">
+              <img src="/assets/images/main/m-sysclein-img1.png" alt="" class="hide--pc">
+            </div>
+            <div class="sysclein-item sysclein-item-last">
+              <img src="/assets/images/main/sysclein-img2.png" alt="" class="hide--m">
+              <img src="/assets/images/main/m-sysclein-img2.png" alt="" class="hide-pc">
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //section5 -->
 
-    <section id="section9" class="parallax__item">
-      <span class="parallax__item__num">09</span>
-      <div class="parallax__item__img"></div>
-      <h2 class="parallax__item__title">section9</h2>
-    </section>
-    <!-- //section9 -->
-  </main>
+      <section id="section6" class="parallax__item film-section">
+        <div class="film-section-bg" data-aos="fade"></div>
+        <div class="film-section-inner">
+          <header class="section-top film">
+            <div data-aos="fade-up" data-aos-delay="500">
+              <p class="section-top__text film">자이라는 이름의 순간</p>
+              <h2 class="section-top__title film">
+                It’s Moment
+              </h2>
+              <p class="section-top__description film">
+                매일의 삶이 남달라지는 순간 우리는 그것을 ‘자이로움’ 이라 부릅니다.
+              </p>
+            </div>
+            <a href="" class="sysclein-section-button section-button" data-aos="fade-up" data-aos-delay="1000">
+              <img src="/assets/images/main/film-button.png" alt="브랜드 영상 보러가기">
+            </a>
+          </header>
+          <div class="film-section-content">
+            <div data-aos="fade-up" data-aos-delay="1000">
+              <iframe  height="315" src="https://www.youtube.com/embed/yqckJtIShyM?si=e5KJNb69Rg_2-EZR&amp;controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="film-iframe">
+              </iframe>
+            </div>
+            <div data-aos="fade-in" data-aos-delay="1300" class="film-content-bottom"></div>
+          </div>
+        </div>
+      </section>
+      <!-- //section6 -->
+
+      <section id="section7" class="parallax__item location-section">
+        <div class="location-section-bg" data-aos="fade"></div>
+        <div class="location-section-inner">
+          <article class="location-left location-section-content" data-aos="slide-up" data-aos-delay="500">
+            <div data-aos="fade-up" data-aos-delay="1300">
+              <p class="location-section-content__title-sub">철산자이 더 시티</p>
+              <h1 class="location-section-content__title">
+                <strong>견본주택</strong>오시는길
+              </h1>
+              <p class="location-section-content__description">
+                철산자이 더 시티의 <b class="color--point">견본주택</b> 오시는길 안내입니다.
+              </p>
+              <div class="hide--m">
+                <img src="/assets/images/main/location-left-img.png" alt="" usemap="#image-map">
+                <map name="image-map">
+                  <area target="" alt="네이버지도보기" title="" href="" coords="-1,444,257,507" shape="rect">
+                  <area target="" alt="카카오지도보기" title="" href="" coords="267,445,515,507" shape="rect">
+                </map>
+              </div>
+              <div class="hide--pc">
+                <img src="/assets/images/main/m-location-left-img.png" alt="" usemap="#image-map-m">
+                <map name="image-map-m">
+                  <area target="" alt="네이버지도보기" title="" href="" coords="66,581,507,657" shape="rect">
+                  <area target="" alt="카카오지도보기" title="" href="" coords="63,667,506,740" shape="rect">
+                </map>
+              </div>
+            </div>
+          </article>
+          <div class="location-right location-section-content" data-aos="slide-up" data-aos-delay="500">
+            <div data-aos="fade-up" data-aos-delay="1300">
+              <p class="location-section-content__title-sub">철산자이 더 시티</p>
+              <h1 class="location-section-content__title">
+                <strong class="color--white">전화상담 예약하기</strong>
+              </h1>
+              <p class="location-section-content__description">
+                성함과 휴대전화번호 작성해 주시면<br/>
+                철산자이 더 시티의 담당자가 <b class="color--white">전화상담</b>을 진행합니다.
+              </p>
+              <form action="" class="reservation-form">
+                <input type="text" class="reservation-input__input" placeholder="성명 입력">
+                <input type="text" class="reservation-input__input" placeholder="휴대폰 번호 입력 (- 제외)">
+                <p class="reservation-description">
+                  ※ 전화상담 예약자 본인의 연락처를 작성해주세요.
+                </p>
+                <div class="reservation-check-area">
+                  <label class="reservation-input__checkbox-label">
+                    <input type="checkbox" class="reservation-input__checkbox">
+                    개인정보 수집 및 이용 동의(필수)
+                  </label>
+                  <a href="" class="reservation-policy-link">약관보기</a>
+                </div>
+                <button class="reservation-form__button">예약하기</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- //section7 -->
+    </main>
+  </div>
 </div>
 
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+<script src="/assets/js/vendors/aos.js"></script>
+<script src="/assets/js/vendors/smoother.js"></script>
+<script src="/assets/js/vendors/jquery.min.js"></script>
+<script src="/assets/js/vendors/jquery.rwdImageMaps.min.js"></script>
 <script>
   // system 그리기
   (function drawCircle () {
@@ -273,17 +401,25 @@
       circleSlider.appendChild(circleItemArea);
     });
     console.log('다그림')
-  })();
+  });
 
   ///////////////////////////////////////////////////////////////////////////////////////////////
 
   // 스크롤 모션들
+  gsap.registerPlugin(ScrollTrigger, ScrollSmoother);
 
-  const panel = document.querySelector("#section1");
+  const markers = true
+
+  // ScrollSmoother.create({
+  //   smooth: 2,               // how long (in seconds) it takes to "catch up" to the native scroll position
+  //   effects: true,           // looks for data-speed and data-lag attributes on elements
+  //   smoothTouch: 0.1,        // much shorter smoothing time on touch devices (default is NO smoothing on touch devices)
+  // });
+
 
   // 1 을 고정함
   ScrollTrigger.create({
-    trigger: panel,
+    trigger: '#section1',
     start: "top top",
     pin: true,
     pinSpacing: false
@@ -293,7 +429,7 @@
   gsap.to(".box-wrap", {
     scrollTrigger: {
       trigger: "#section1",
-      //markers: true,
+      markers: markers,
       start: "0% 10%",
       end : "+=55%" ,
       scrub: 1,
@@ -305,36 +441,34 @@
   gsap.to(".js-section2-box", {
     scrollTrigger: {
       trigger: ".box-wrap",
-      //markers: true,
+      markers: markers,
       //pin: true,
       start: '0% 90%',
       end: "+=50%",
       scrub: 1,
     },
     width: '100%',
+    borderRadius: 0,
     height: '100vh',
   })
-
-/*
-  gsap.to('.js-premium-1', {
+  gsap.to(".js-summary-box-bottom", {
     scrollTrigger: {
-      trigger: "#section3",
-      markers: true,
-      pin: true,
-      start: "0% 0%",
-      end : "+=100%" ,
+      trigger: ".box-wrap",
+      markers: markers,
+      //pin: true,
+      start: '50% 90%',
+      end: "+=10%",
       scrub: 1,
-      on
     },
-    transform: 'translateY(-50%)'
+    transform: 'scale(1)'
   })
-*/
+
 
   ////////////// 프레미엄 //////////////
   const tl = gsap.timeline({
     scrollTrigger: {
       trigger: '.section3-bottom',
-      start: '0% 30%',
+      start: '0% 20%',
       end: 'bottom center',
       scrub: 1,
       ease: 'linear',
@@ -342,37 +476,70 @@
   });
 
   tl.to('.js-uses-section', {
-    height: '180px',
-    marginTop: -80,
-    // transform: 'translateY(-30px)',
-    /*transform: function(idx) {
-      return `translateY(${ - (idx * 800)}px)`
-    },*/
-    stagger: .05,
+    height: '200px',
+    marginTop: -60,
+    stagger: .1,
   }, '<');
 
   tl.to('.js-uses-section-last', {
-    marginTop: -30,
-
-  },);
-
-
-  ///////////// system //////////////////
-  console.log('시스템등록')
-  gsap.to('.circle-slider', {
-    scrollTrigger: {
-      markers: true,
-      trigger: '.system-section',
-      pin: true,
-      start: 'top top',
-      end: '+=100%',
-      scrub: -3,
-    },
-    rotation: -40
+    marginTop: -20,
+    stagger: .1,
   });
 
 
+  ///////////// system //////////////////
+  // gsap.to('.circle-slider', {
+  //   scrollTrigger: {
+  //     markers: markers,
+  //     trigger: '.system-section',
+  //     pin: true,
+  //     start: '5% top',
+  //     end: '+=200%',
+  //     scrub: 1,
+  //   },
+  //   rotation: -40
+  // });
 
+  ////////////// sys clein ////////////////
+
+  const sc = gsap.timeline({
+    scrollTrigger: {
+      trigger: '#section5',
+      markers: markers,
+      pin: true,
+      start: 'top top',
+      end: '+=100%',
+      scrub: 12,
+      ease: 'linear',
+    }
+  });
+
+
+  sc.to('.sysclein-item', {
+    transform: 'translateY(0)',
+    stagger: .7
+  }, '<')
+
+  sc.to('.sysclein-item', {
+    transform: 'scale(0.9)',
+    duration: 2,
+    stagger: .7,
+    //ease: 'cubic-bezier(1,0,1,.11)'
+  }, '<')
+
+  sc.to('.sysclein-item-not-last', {
+    opacity: 0.9,
+    duration: 2,
+    stagger: .7,
+    //ease: 'cubic-bezier(1,0,1,.11)'
+  }, '<')
+
+
+  AOS.init({
+    duration: 1500
+  });
+
+  $('img[usemap]').rwdImageMaps();
 </script>
 </body>
 </html>

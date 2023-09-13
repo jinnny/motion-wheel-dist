@@ -4,6 +4,9 @@
 @import "raw/base/fonts";
 @import "raw/base/reset";
 
+@import "vendors/aos.css";
+
 @import "raw/layout/common";
+@import "raw/layout/header";
 @import "raw/pages/gsap";
 
